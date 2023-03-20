@@ -4,9 +4,154 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio de Omar Juárez</title>
+
+    <title>Omar Juárez - omarjuarez.me</title>
+    <meta name="description" content="Portafilo y contacto de Oscar Omar Solís Juárez, científico de datos y desarrollador de sistemas">
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js' integrity='sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==' crossorigin='anonymous'></script>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css' integrity='sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==' crossorigin='anonymous'/>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css' integrity='sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==' crossorigin='anonymous'/>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js' integrity='sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==' crossorigin='anonymous'></script>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css' integrity='sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==' crossorigin='anonymous'/>
+    <link rel="stylesheet" href="theme.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PRFECNTQSP"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-PRFECNTQSP');
+    </script>
+
+    <style>
+        html, body, main {
+            height: 100%
+        }
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+            background-color: #ebebeb;
+            background-image: url('bg.png');
+            background-repeat: repeat;
+        }
+        .lang-icon {
+            display: none;
+            font-weight: bold;
+        }
+        .lang-icon:nth-child(1) {
+            display: block;
+        }
+        .lang-icon::before {
+            content: '{ skill: "';
+            font-weight: normal;
+        }
+        .lang-icon::after {
+            content: '" }';
+            font-weight: normal;
+        }
+        .btn-contact span {
+            margin-left: 4px;
+        }
+        .btn {
+            font-size: 1rem;
+        }
+    </style>
+    <script>
+        $(document).ready(() => {
+            setTimeout(() => {
+                var elems = $(".lang-icon");
+                var total_elems = elems.length
+                var elem = 0
+
+                setInterval(() => {
+                    if (++elem >= total_elems) {
+                        elem = 0
+                    }
+                    elems.hide()
+                    $(elems.eq(elem)).show()
+                }, 700)
+            }, 3500)
+        })
+    </script>
 </head>
 <body>
-    ¡Hola Mundo!
+    <main class="d-flex align-items-center justify-content-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-10 offset-md-1">
+                    <div class="text-center">
+                        <div class="h1 fw-bold" data-aos="fade-down" data-aos-duration="2600">Oscar Omar Solís Juárez</div>
+                        <div class="h3 fw-light" data-aos="fade-down" data-aos-duration="2900">Ciencias Computacionales - UAEH</div>
+                        <div class="h5 text-secondary" data-aos="fade-up" data-aos-duration="3000">contacto@omarjuarez.me</div>
+                    </div>
+
+                    <div class="text-center d-flex justify-content-center mt-4" data-aos="zoom-in-up" data-aos-duration="3000">
+                        <div class="lang-icon fs-3 mt-2 mx-2">PHP</div>
+                        <div class="lang-icon fs-3 mt-2 mx-2">MySQL</div>
+                        <div class="lang-icon fs-3 mt-2 mx-2">GNU/Linux</div>
+                        <div class="lang-icon fs-3 mt-2 mx-2">Laravel</div>
+                        <div class="lang-icon fs-3 mt-2 mx-2">CodeIgniter</div>
+                        <div class="lang-icon fs-3 mt-2 mx-2">MVC</div>
+                        <div class="lang-icon fs-3 mt-2 mx-2">SCRUM</div>
+                        <div class="lang-icon fs-3 mt-2 mx-2">Android</div>
+                        <div class="lang-icon fs-3 mt-2 mx-2">Kotlin</div>
+                        <div class="lang-icon fs-3 mt-2 mx-2">JSON</div>
+                        <div class="lang-icon fs-3 mt-2 mx-2">HTML</div>
+                        <div class="lang-icon fs-3 mt-2 mx-2">CSS</div>
+                        <div class="lang-icon fs-3 mt-2 mx-2">SCSS</div>
+                        <div class="lang-icon fs-3 mt-2 mx-2">Javascript</div>
+                        <div class="lang-icon fs-3 mt-2 mx-2">Bootstrap</div>
+                        <div class="lang-icon fs-3 mt-2 mx-2">Python</div>
+                        <div class="lang-icon fs-3 mt-2 mx-2">Matlab</div>
+                        <div class="lang-icon fs-3 mt-2 mx-2">MS Windows</div>
+                        <div class="lang-icon fs-3 mt-2 mx-2">Java</div>
+                        <div class="lang-icon fs-3 mt-2 mx-2">Typescript</div>
+                        <div class="lang-icon fs-3 mt-2 mx-2">IA</div>
+                    </div>
+
+                    <div class="text-center mt-5" data-aos="zoom-in-up" data-aos-duration="3000">
+                        <div class="row">
+                            <div class="col-6 col-md-3">
+                                <div class="d-grid gap-2">
+                                    <a class="btn btn-primary btn-contact m-3" href="mailto:contacto@omarjuarez.me">
+                                        <i class="fa-solid fa-envelope-open-text"></i><span> Contacto</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="d-grid gap-2">
+                                    <a class="btn btn-primary btn-contact m-3" href="https://linkedin.com/in/oosj">
+                                        <i class="fa-brands fa-linkedin"></i><span> LinkedIn</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="d-grid gap-2">
+                                    <a class="btn btn-primary btn-contact m-3" href="https://gitlab.com/oosj">
+                                        <i class="fa-brands fa-gitlab"></i><span> GitLab</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="d-grid gap-2">
+                                    <a class="btn btn-primary btn-contact m-3" href="https://github.com/oosj">
+                                        <i class="fa-brands fa-github"></i><span> GitHub</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        AOS.init()
+    </script>
 </body>
 </html>
